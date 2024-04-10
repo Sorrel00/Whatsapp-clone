@@ -16,7 +16,7 @@ function Sidebar(){
         db.collection('rooms').onSnapshot(snapshot => (
             setRooms(snapshot.docs.map(doc => ({
                 id: doc.id, 
-                data: doc.data()
+                data: doc.data(),
             })
             ))
         ))
